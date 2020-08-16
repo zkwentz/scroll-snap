@@ -270,7 +270,7 @@ export default class ScrollSnap {
 
   private parseSnapCoordValue(x: string, y: string) {
     // regex to parse lengths
-    const regex = /(\d+)(px|%|vw|vh)/
+    const regex = /([\d\.]+)(px|%|vw|vh)/
     // defaults
     const parsed = {
       y: {
